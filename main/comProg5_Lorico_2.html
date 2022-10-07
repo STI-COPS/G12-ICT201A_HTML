@@ -1,0 +1,61 @@
+<HTML>
+	<Head>
+		<Title>calc</Title>
+		<Script type = "text/JavaScript">
+			function plus(){
+				var num1 = 5;
+				var num2 = 10;
+				
+				var ans = num1 + num2;
+				document.getElementById("fir").innerHTML = num1;
+				document.getElementById("sec").innerHTML = num2;
+				document.getElementById("ans").innerHTML = ans;
+				document.getElementById("eq").innerHTML = "sum ";
+			}
+			function diff(){
+				var num1 = 8;
+				var num2 = 2;
+				
+				var ans = num1 - num2;
+				document.getElementById("fir").innerHTML = num1;
+				document.getElementById("sec").innerHTML = num2;
+				document.getElementById("ans").innerHTML = ans;
+				document.getElementById("eq").innerHTML = "difference ";
+			}
+			function prod(){
+				var num1 = 4;
+				var num2 = 15;
+				
+				var ans = num1 * num2;
+				document.getElementById("fir").innerHTML = num1;
+				document.getElementById("sec").innerHTML = num2;
+				document.getElementById("ans").innerHTML = ans;
+				document.getElementById("eq").innerHTML = "product ";
+			}
+			function quo(){
+				var num1 = 15;
+				var num2 = 3;
+				
+				var ans = num1 / num2;
+				document.getElementById("fir").innerHTML = num1;
+				document.getElementById("sec").innerHTML = num2;
+				document.getElementById("ans").innerHTML = ans;
+				document.getElementById("eq").innerHTML = "quotient ";
+			}
+			
+			
+		</Script>
+	</Head>
+	<Body>
+		<input type= "button" value= "+" onclick = plus()><br>
+		<input type= "button" value= "-" onclick = diff()><br>
+		<input type= "button" value= "*" onclick = prod()><br>
+		<input type= "button" value= "/" oncLick = quo()><br><br>
+		
+		<i>The first number is: <i id= "fir"> </i></i><br>
+		<u>The second number is: <u id= "sec"> </u></u><br>
+		
+		The <span id = "eq"> sum </span>is <span id = "ans"> </span>
+				
+	</Body>
+</HTML>

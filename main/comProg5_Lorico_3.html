@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>Another Act</title>
+		<script type="text/JavaScript">
+			
+			function comp(){
+			
+				var opr = document.getElementById("op").value;
+				var num1 = document.getElementById("fir").value;
+				var num2 = document.getElementById("sec").value;
+				var num3 = document.getElementById("thr").value;
+				
+				if(opr == "+"){
+					
+					var ans = parseInt(num1) + parseInt(num2) + parseInt(num3);
+					var out1 = document.getElementById("firnum").innerHTML = num1;
+					var out2 = document.getElementById("ope").innerHTML = opr;
+					var out3 = document.getElementById("ope2").innerHTML = opr;
+					var out4 = document.getElementById("secnum").innerHTML = num2;
+					var out5 = document.getElementById("thrnum").innerHTML = num3;
+					var out6 = document.getElementById("ans").innerHTML = ans;
+					var out6 = document.getElementById("eq").innerHTML = "=" ;
+				
+				}else if(opr == "-"){
+				
+					var ans = parseInt(num1) - parseInt(num2) - parseInt(num3);
+					var out1 = document.getElementById("firnum").innerHTML = num1;
+					var out2 = document.getElementById("ope").innerHTML = opr;
+					var out3 = document.getElementById("ope2").innerHTML = opr;
+					var out4 = document.getElementById("secnum").innerHTML = num2;
+					var out5 = document.getElementById("thrnum").innerHTML = num3;
+					var out6 = document.getElementById("ans").innerHTML = ans;
+					var out6 = document.getElementById("eq").innerHTML = "=" ;
+				}else if(opr == "*"){
+				
+					var ans = parseInt(num1) * parseInt(num2) * parseInt(num3);
+					var out1 = document.getElementById("firnum").innerHTML = num1;
+					var out2 = document.getElementById("ope").innerHTML = opr;
+					var out3 = document.getElementById("ope2").innerHTML = opr;
+					var out4 = document.getElementById("secnum").innerHTML = num2;
+					var out5 = document.getElementById("thrnum").innerHTML = num3;
+					var out6 = document.getElementById("ans").innerHTML = ans;
+					var out6 = document.getElementById("eq").innerHTML = "=" ;
+				
+				}else if(opr == "/"){
+				
+					var ans = parseInt(num1) / parseInt(num2) / parseInt(num3);
+					var out1 = document.getElementById("firnum").innerHTML = num1;
+					var out2 = document.getElementById("ope").innerHTML = opr;
+					var out3 = document.getElementById("ope2").innerHTML = opr;
+					var out4 = document.getElementById("secnum").innerHTML = num2;
+					var out5 = document.getElementById("thrnum").innerHTML = num3;
+					var out6 = document.getElementById("ans").innerHTML = ans;
+					var out6 = document.getElementById("eq").innerHTML = "=" ;
+				
+				}else{
+					var unk = document.getElementById("firnum").innerHTML = "Error...."
+				}
+			}
+		
+		</script>
+	</head>
+	<body>
+	
+	<input type = "text" id = "fir" placeholder="First Number"><br>
+	<input type = "text" id = "op" placeholder="Enter Operator"><br>
+	<input type = "text" id = "sec" placeholder="Second Number"><br>
+	<input type = "text" id = "thr" placeholder="Third Number"><br><br>
+	<input type = "button" value = "Compute" onClick = comp()>
+	<br><br>
+	
+	<b id="firnum"></b> <b id="ope"></b> <b id="secnum"></b> <b id="ope2"></b> <b id="thrnum"></b> <b id = "eq"></b> <b id="ans"></b>
+	
+	
+	</body>
+</html>
